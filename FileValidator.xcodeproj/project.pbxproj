@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44989AC12CD61E6800AD0381 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44989AC02CD61E6800AD0381 /* ContentView.swift */; };
+		44989AC32CD61E6A00AD0381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44989AC22CD61E6A00AD0381 /* Assets.xcassets */; };
+		44989AC62CD61E6A00AD0381 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44989AC52CD61E6A00AD0381 /* Preview Assets.xcassets */; };
+		44989AD12CD61E6A00AD0381 /* FileValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44989AD02CD61E6A00AD0381 /* FileValidatorTests.swift */; };
+		44CF4BC52CD65BA000FF9098 /* FileValidatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44989ABE2CD61E6800AD0381 /* FileValidatorApp.swift */; };
+		44CF4BCC2CD6605600FF9098 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BCB2CD6605600FF9098 /* MainViewModel.swift */; };
+		44CF4BD02CD66F2A00FF9098 /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CF4BCF2CD66F2A00FF9098 /* testImage.png */; };
+		44CF4BD82CD6834500FF9098 /* XPCFileValidator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BD72CD6834500FF9098 /* XPCFileValidator2.swift */; };
+		44CF4BDA2CD6834500FF9098 /* XPCFileValidator2Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BD92CD6834500FF9098 /* XPCFileValidator2Protocol.swift */; };
+		44CF4BDC2CD6834500FF9098 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BDB2CD6834500FF9098 /* main.swift */; };
+		44CF4BE12CD6834500FF9098 /* XPCFileValidator2.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 44CF4BD52CD6834500FF9098 /* XPCFileValidator2.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44CF4BE52CD6835800FF9098 /* XPCFileValidator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BD72CD6834500FF9098 /* XPCFileValidator2.swift */; };
+		44CF4BE62CD6835B00FF9098 /* XPCFileValidator2Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BD92CD6834500FF9098 /* XPCFileValidator2Protocol.swift */; };
+		44CF4BFD2CD68F5000FF9098 /* ChecksumAlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BFB2CD68F5000FF9098 /* ChecksumAlgorithmType.swift */; };
+		44CF4BFE2CD68F5000FF9098 /* ChecksumAlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BFB2CD68F5000FF9098 /* ChecksumAlgorithmType.swift */; };
+		44CF4BFF2CD68F5000FF9098 /* ChecksumAlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BFB2CD68F5000FF9098 /* ChecksumAlgorithmType.swift */; };
+		44CF4C002CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BFC2CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift */; };
+		44CF4C012CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BFC2CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift */; };
+		44CF4C022CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF4BFC2CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44989ACD2CD61E6A00AD0381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44989AB32CD61E6800AD0381 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44989ABA2CD61E6800AD0381;
+			remoteInfo = FileValidator;
+		};
+		44CF4BDF2CD6834500FF9098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44989AB32CD61E6800AD0381 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44CF4BD42CD6834500FF9098;
+			remoteInfo = XPCFileValidator2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44989AFB2CD64D3800AD0381 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				44CF4BE12CD6834500FF9098 /* XPCFileValidator2.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		44989ABB2CD61E6800AD0381 /* FileValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44989ABE2CD61E6800AD0381 /* FileValidatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileValidatorApp.swift; sourceTree = "<group>"; };
+		44989AC02CD61E6800AD0381 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44989AC22CD61E6A00AD0381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44989AC52CD61E6A00AD0381 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44989AC72CD61E6A00AD0381 /* FileValidator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FileValidator.entitlements; sourceTree = "<group>"; };
+		44989ACC2CD61E6A00AD0381 /* FileValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44989AD02CD61E6A00AD0381 /* FileValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileValidatorTests.swift; sourceTree = "<group>"; };
+		44CF4BCB2CD6605600FF9098 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		44CF4BCF2CD66F2A00FF9098 /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
+		44CF4BD52CD6834500FF9098 /* XPCFileValidator2.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = XPCFileValidator2.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CF4BD72CD6834500FF9098 /* XPCFileValidator2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCFileValidator2.swift; sourceTree = "<group>"; };
+		44CF4BD92CD6834500FF9098 /* XPCFileValidator2Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCFileValidator2Protocol.swift; sourceTree = "<group>"; };
+		44CF4BDB2CD6834500FF9098 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		44CF4BDD2CD6834500FF9098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CF4BDE2CD6834500FF9098 /* XPCFileValidator2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPCFileValidator2.entitlements; sourceTree = "<group>"; };
+		44CF4BFB2CD68F5000FF9098 /* ChecksumAlgorithmType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecksumAlgorithmType.swift; sourceTree = "<group>"; };
+		44CF4BFC2CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChecksumWithAlgorithmType.swift; path = ../../XPCTest/XPCFileValidator/ChecksumWithAlgorithmType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44989AB82CD61E6800AD0381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44989AC92CD61E6A00AD0381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CF4BD22CD6834500FF9098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44989AB22CD61E6800AD0381 = {
+			isa = PBXGroup;
+			children = (
+				44989ABD2CD61E6800AD0381 /* FileValidator */,
+				44989ACF2CD61E6A00AD0381 /* FileValidatorTests */,
+				44CF4BD62CD6834500FF9098 /* XPCFileValidator2 */,
+				44989ABC2CD61E6800AD0381 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44989ABC2CD61E6800AD0381 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44989ABB2CD61E6800AD0381 /* FileValidator.app */,
+				44989ACC2CD61E6A00AD0381 /* FileValidatorTests.xctest */,
+				44CF4BD52CD6834500FF9098 /* XPCFileValidator2.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44989ABD2CD61E6800AD0381 /* FileValidator */ = {
+			isa = PBXGroup;
+			children = (
+				44989ABE2CD61E6800AD0381 /* FileValidatorApp.swift */,
+				44989AC02CD61E6800AD0381 /* ContentView.swift */,
+				44CF4BCB2CD6605600FF9098 /* MainViewModel.swift */,
+				44989AC22CD61E6A00AD0381 /* Assets.xcassets */,
+				44989AC72CD61E6A00AD0381 /* FileValidator.entitlements */,
+				44989AC42CD61E6A00AD0381 /* Preview Content */,
+			);
+			path = FileValidator;
+			sourceTree = "<group>";
+		};
+		44989AC42CD61E6A00AD0381 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				44989AC52CD61E6A00AD0381 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44989ACF2CD61E6A00AD0381 /* FileValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				44989AD02CD61E6A00AD0381 /* FileValidatorTests.swift */,
+				44CF4BCF2CD66F2A00FF9098 /* testImage.png */,
+			);
+			path = FileValidatorTests;
+			sourceTree = "<group>";
+		};
+		44CF4BD62CD6834500FF9098 /* XPCFileValidator2 */ = {
+			isa = PBXGroup;
+			children = (
+				44CF4BD72CD6834500FF9098 /* XPCFileValidator2.swift */,
+				44CF4BD92CD6834500FF9098 /* XPCFileValidator2Protocol.swift */,
+				44CF4BFB2CD68F5000FF9098 /* ChecksumAlgorithmType.swift */,
+				44CF4BFC2CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift */,
+				44CF4BDB2CD6834500FF9098 /* main.swift */,
+				44CF4BDD2CD6834500FF9098 /* Info.plist */,
+				44CF4BDE2CD6834500FF9098 /* XPCFileValidator2.entitlements */,
+			);
+			path = XPCFileValidator2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44989ABA2CD61E6800AD0381 /* FileValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44989AE02CD61E6A00AD0381 /* Build configuration list for PBXNativeTarget "FileValidator" */;
+			buildPhases = (
+				44989AB72CD61E6800AD0381 /* Sources */,
+				44989AB82CD61E6800AD0381 /* Frameworks */,
+				44989AB92CD61E6800AD0381 /* Resources */,
+				44989AFB2CD64D3800AD0381 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44CF4BE02CD6834500FF9098 /* PBXTargetDependency */,
+			);
+			name = FileValidator;
+			productName = FileValidator;
+			productReference = 44989ABB2CD61E6800AD0381 /* FileValidator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44989ACB2CD61E6A00AD0381 /* FileValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44989AE32CD61E6A00AD0381 /* Build configuration list for PBXNativeTarget "FileValidatorTests" */;
+			buildPhases = (
+				44989AC82CD61E6A00AD0381 /* Sources */,
+				44989AC92CD61E6A00AD0381 /* Frameworks */,
+				44989ACA2CD61E6A00AD0381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44989ACE2CD61E6A00AD0381 /* PBXTargetDependency */,
+			);
+			name = FileValidatorTests;
+			productName = FileValidatorTests;
+			productReference = 44989ACC2CD61E6A00AD0381 /* FileValidatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44CF4BD42CD6834500FF9098 /* XPCFileValidator2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CF4BE22CD6834500FF9098 /* Build configuration list for PBXNativeTarget "XPCFileValidator2" */;
+			buildPhases = (
+				44CF4BD12CD6834500FF9098 /* Sources */,
+				44CF4BD22CD6834500FF9098 /* Frameworks */,
+				44CF4BD32CD6834500FF9098 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCFileValidator2;
+			productName = XPCFileValidator2;
+			productReference = 44CF4BD52CD6834500FF9098 /* XPCFileValidator2.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44989AB32CD61E6800AD0381 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					44989ABA2CD61E6800AD0381 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					44989ACB2CD61E6A00AD0381 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 44989ABA2CD61E6800AD0381;
+					};
+					44CF4BD42CD6834500FF9098 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 44989AB62CD61E6800AD0381 /* Build configuration list for PBXProject "FileValidator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44989AB22CD61E6800AD0381;
+			productRefGroup = 44989ABC2CD61E6800AD0381 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44989ABA2CD61E6800AD0381 /* FileValidator */,
+				44989ACB2CD61E6A00AD0381 /* FileValidatorTests */,
+				44CF4BD42CD6834500FF9098 /* XPCFileValidator2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44989AB92CD61E6800AD0381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44989AC62CD61E6A00AD0381 /* Preview Assets.xcassets in Resources */,
+				44989AC32CD61E6A00AD0381 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44989ACA2CD61E6A00AD0381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CF4BD02CD66F2A00FF9098 /* testImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CF4BD32CD6834500FF9098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44989AB72CD61E6800AD0381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44989AC12CD61E6800AD0381 /* ContentView.swift in Sources */,
+				44CF4C002CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift in Sources */,
+				44CF4BE52CD6835800FF9098 /* XPCFileValidator2.swift in Sources */,
+				44CF4BC52CD65BA000FF9098 /* FileValidatorApp.swift in Sources */,
+				44CF4BCC2CD6605600FF9098 /* MainViewModel.swift in Sources */,
+				44CF4BE62CD6835B00FF9098 /* XPCFileValidator2Protocol.swift in Sources */,
+				44CF4BFD2CD68F5000FF9098 /* ChecksumAlgorithmType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44989AC82CD61E6A00AD0381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CF4BFE2CD68F5000FF9098 /* ChecksumAlgorithmType.swift in Sources */,
+				44CF4C012CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift in Sources */,
+				44989AD12CD61E6A00AD0381 /* FileValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CF4BD12CD6834500FF9098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CF4C022CD68F5000FF9098 /* ChecksumWithAlgorithmType.swift in Sources */,
+				44CF4BFF2CD68F5000FF9098 /* ChecksumAlgorithmType.swift in Sources */,
+				44CF4BD82CD6834500FF9098 /* XPCFileValidator2.swift in Sources */,
+				44CF4BDA2CD6834500FF9098 /* XPCFileValidator2Protocol.swift in Sources */,
+				44CF4BDC2CD6834500FF9098 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44989ACE2CD61E6A00AD0381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44989ABA2CD61E6800AD0381 /* FileValidator */;
+			targetProxy = 44989ACD2CD61E6A00AD0381 /* PBXContainerItemProxy */;
+		};
+		44CF4BE02CD6834500FF9098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44CF4BD42CD6834500FF9098 /* XPCFileValidator2 */;
+			targetProxy = 44CF4BDF2CD6834500FF9098 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44989ADE2CD61E6A00AD0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44989ADF2CD61E6A00AD0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		44989AE12CD61E6A00AD0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FileValidator/FileValidator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FileValidator/Preview Content\"";
+				DEVELOPMENT_TEAM = RF5942C266;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devchallenge.FileValidator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		44989AE22CD61E6A00AD0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FileValidator/FileValidator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FileValidator/Preview Content\"";
+				DEVELOPMENT_TEAM = RF5942C266;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devchallenge.FileValidator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		44989AE42CD61E6A00AD0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RF5942C266;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devchallenge.FileValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileValidator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FileValidator";
+			};
+			name = Debug;
+		};
+		44989AE52CD61E6A00AD0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RF5942C266;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devchallenge.FileValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileValidator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FileValidator";
+			};
+			name = Release;
+		};
+		44CF4BE32CD6834500FF9098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCFileValidator2/XPCFileValidator2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RF5942C266;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XPCFileValidator2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XPCFileValidator2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devchallenge.XPCFileValidator2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		44CF4BE42CD6834500FF9098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCFileValidator2/XPCFileValidator2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RF5942C266;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XPCFileValidator2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XPCFileValidator2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devchallenge.XPCFileValidator2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44989AB62CD61E6800AD0381 /* Build configuration list for PBXProject "FileValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44989ADE2CD61E6A00AD0381 /* Debug */,
+				44989ADF2CD61E6A00AD0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44989AE02CD61E6A00AD0381 /* Build configuration list for PBXNativeTarget "FileValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44989AE12CD61E6A00AD0381 /* Debug */,
+				44989AE22CD61E6A00AD0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44989AE32CD61E6A00AD0381 /* Build configuration list for PBXNativeTarget "FileValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44989AE42CD61E6A00AD0381 /* Debug */,
+				44989AE52CD61E6A00AD0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44CF4BE22CD6834500FF9098 /* Build configuration list for PBXNativeTarget "XPCFileValidator2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CF4BE32CD6834500FF9098 /* Debug */,
+				44CF4BE42CD6834500FF9098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44989AB32CD61E6800AD0381 /* Project object */;
+}
